@@ -3,6 +3,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
 # 1️⃣ Load the fine-tuned model checkpoint
 model_path = "./helpdesk-bot/checkpoint-125"
+# model_path = "./helpdesk-bot-continued"
+
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForCausalLM.from_pretrained(model_path)
 
